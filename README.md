@@ -19,3 +19,4 @@ View your app in AI Studio: https://ai.studio/apps/drive/1xgtD0T0bsLQ0uOcZoAezmq
 3. Run the app:
    `npm run dev`
 # prompttize
+# skillmap
