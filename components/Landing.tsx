@@ -50,7 +50,7 @@ export const Landing: React.FC<LandingProps> = ({ onStart, onStartVerbalizedSamp
               <SignInButton mode="modal">
                 <Button variant="outline" className="!py-2 !px-4 text-sm">
                   Sign In
-                </Button>
+        </Button>
               </SignInButton>
             </SignedOut>
             <SignedIn>
@@ -117,7 +117,7 @@ export const Landing: React.FC<LandingProps> = ({ onStart, onStartVerbalizedSamp
 
       {!showApiKeyInput && (
         <>
-          <main className="flex-1 flex flex-col items-center justify-center px-4 py-12 text-center max-w-5xl mx-auto">
+      <main className="flex-1 flex flex-col items-center justify-center px-4 py-12 text-center max-w-5xl mx-auto">
         <div className="inline-flex items-center gap-2 bg-brand-black/5 rounded-full px-4 py-1 mb-8">
           <Sparkles className="w-4 h-4" />
           <span className="text-sm font-bold tracking-wide uppercase">AI Prompt Engineer</span>
@@ -134,9 +134,9 @@ export const Landing: React.FC<LandingProps> = ({ onStart, onStartVerbalizedSamp
         
         <div className="flex flex-col sm:flex-row gap-4 w-full justify-center max-w-2xl mx-auto">
           <SignedIn>
-            <Button onClick={onStart} className="text-lg py-4 !bg-brand-black !text-brand-yellow">
-              Create a Prompt <ArrowRight className="w-5 h-5" />
-            </Button>
+          <Button onClick={onStart} className="text-lg py-4 !bg-brand-black !text-brand-yellow">
+            Create a Prompt <ArrowRight className="w-5 h-5" />
+          </Button>
             {onStartVerbalizedSampling && (
               <Button onClick={onStartVerbalizedSampling} variant="outline" className="text-lg py-4">
                 Verbalized Sampling <Sparkles className="w-5 h-5" />
@@ -182,9 +182,9 @@ export const Landing: React.FC<LandingProps> = ({ onStart, onStartVerbalizedSamp
         </div>
       </main>
 
-          <footer className="p-6 text-center text-sm font-medium opacity-60">
-            © 2024 Promptize. Built with Google Gemini.
-          </footer>
+      <footer className="p-6 text-center text-sm font-medium opacity-60">
+        © 2024 Promptize. Built with Google Gemini.
+      </footer>
         </>
       )}
     </div>

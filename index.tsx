@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { ClerkProvider } from '@clerk/clerk-react';
+import { Analytics } from '@vercel/analytics/react';
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
 if (!PUBLISHABLE_KEY) {
@@ -18,6 +19,7 @@ root.render(
   <React.StrictMode>
     <ClerkProvider publishableKey={PUBLISHABLE_KEY} afterSignOutUrl="/">
       <App />
+      <Analytics />
     </ClerkProvider>
   </React.StrictMode>
 );
